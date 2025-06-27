@@ -23,7 +23,11 @@ python main.py --model ULIP_PointBERT --evaluate_3d --npoints 2048 --test_ckpt_a
 
 ## test on SR2
 python main.py --model ULIP_PointBERT --evaluate_3d --npoints 2048 --test_ckpt_addr path/to/your/pre-trained/model --dataset_name ScanObjectNN15 --dataset_split SR2
+
+## test on SR3
+python main.py --model ULIP_PointBERT --evaluate_3d --npoints 2048 --test_ckpt_addr path/to/your/pre-trained/model --dataset_name ScanObjectNN15 --dataset_split SR3
 ```
+
 # Citation
 
 
@@ -36,7 +40,5 @@ We sincerely appreciate these highly valuable repositories [ULIP2](https://githu
 
 
 
-## test on SR3
-python main.py --model ULIP_PointBERT --evaluate_3d --npoints 2048 --test_ckpt_addr path/to/your/pre-trained/model --dataset_name ScanObjectNN15 --dataset_split SR3
-```
+
 
