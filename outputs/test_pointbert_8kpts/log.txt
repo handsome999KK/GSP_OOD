@@ -1,0 +1,4 @@
+Not using distributed mode
+> /home/kk/下载/ULIP-main/main.py(439)test_zeroshot_3d()
+-> ckpt = torch.load(args.test_ckpt_addr, map_location='cpu')
+(Pdb) 

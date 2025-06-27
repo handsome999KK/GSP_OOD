@@ -1,0 +1,4 @@
+NAME: S3DIS
+DATA_PATH: data/s3dis7_normal_resampled
+NUM_CATEGORY: 7
+USE_NORMALS: FALSE

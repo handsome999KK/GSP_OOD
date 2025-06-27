@@ -1,0 +1,19 @@
+{
+    "ScanObjectNN15": [
+        "chair",
+        "shelf",
+        "door",
+        "sink",
+        "sofa",
+        "bed",
+        "toilet",
+        "desk",
+        "table",
+        "display",
+        "bag",
+        "bin",
+        "box",
+        "pillow",
+        "cabinet"
+    ]
+}

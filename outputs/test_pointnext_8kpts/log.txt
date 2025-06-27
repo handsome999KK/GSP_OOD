@@ -1,0 +1,57 @@
+Not using distributed mode
+=> creating model: ULIP_PN_NEXT
+Traceback (most recent call last):
+  File "main.py", line 446, in test_zeroshot_3d
+    model = getattr(models, old_args.model)(args=args)
+  File "/home/kk/下载/ULIP-main/models/ULIP_models.py", line 299, in ULIP_PN_NEXT
+    from models.pointnext.pointnext import PointNEXT
+  File "/home/kk/下载/ULIP-main/models/pointnext/pointnext.py", line 15, in <module>
+    from openpoints.models import build_model_from_cfg
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/models/__init__.py", line 6, in <module>
+    from .backbone import *
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/models/backbone/__init__.py", line 2, in <module>
+    from .pointnetv2 import PointNet2Encoder, PointNet2Decoder, PointNetFPModule
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/models/backbone/pointnetv2.py", line 14, in <module>
+    from ..layers import furthest_point_sample, random_sample,  LocalAggregation, three_interpolation, create_convblock1d # grid_subsampling,
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/models/layers/__init__.py", line 9, in <module>
+    from .group_embed import SubsampleGroup, PointPatchEmbed, P3Embed
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/models/layers/group_embed.py", line 7, in <module>
+    from .subsample import furthest_point_sample, random_sample
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/models/layers/subsample.py", line 8, in <module>
+    from openpoints.cpp.pointnet2_batch import pointnet2_cuda
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/cpp/__init__.py", line 6, in <module>
+    from .pointnet2_batch import pointnet2_cuda
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/cpp/pointnet2_batch/__init__.py", line 2, in <module>
+    import pointnet2_batch_cuda as pointnet2_cuda
+ModuleNotFoundError: No module named 'pointnet2_batch_cuda'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 545, in <module>
+    main(args)
+  File "main.py", line 104, in main
+    zero_stats = test_zeroshot_3d(args)
+  File "main.py", line 451, in test_zeroshot_3d
+    model = getattr(models, args.model)(args=args)
+  File "/home/kk/下载/ULIP-main/models/ULIP_models.py", line 299, in ULIP_PN_NEXT
+    from models.pointnext.pointnext import PointNEXT
+  File "/home/kk/下载/ULIP-main/models/pointnext/pointnext.py", line 15, in <module>
+    from openpoints.models import build_model_from_cfg
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/models/__init__.py", line 6, in <module>
+    from .backbone import *
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/models/backbone/__init__.py", line 2, in <module>
+    from .pointnetv2 import PointNet2Encoder, PointNet2Decoder, PointNetFPModule
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/models/backbone/pointnetv2.py", line 14, in <module>
+    from ..layers import furthest_point_sample, random_sample,  LocalAggregation, three_interpolation, create_convblock1d # grid_subsampling,
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/models/layers/__init__.py", line 9, in <module>
+    from .group_embed import SubsampleGroup, PointPatchEmbed, P3Embed
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/models/layers/group_embed.py", line 7, in <module>
+    from .subsample import furthest_point_sample, random_sample
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/models/layers/subsample.py", line 8, in <module>
+    from openpoints.cpp.pointnet2_batch import pointnet2_cuda
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/cpp/__init__.py", line 6, in <module>
+    from .pointnet2_batch import pointnet2_cuda
+  File "/home/kk/下载/ULIP-main/./models/pointnext/PointNeXt/openpoints/cpp/pointnet2_batch/__init__.py", line 2, in <module>
+    import pointnet2_batch_cuda as pointnet2_cuda
+ModuleNotFoundError: No module named 'pointnet2_batch_cuda'

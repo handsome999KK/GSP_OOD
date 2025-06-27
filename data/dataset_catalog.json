@@ -1,0 +1,32 @@
+{
+    "shapenet": {
+        "config": "./data/ShapeNet-55.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "train"
+    },
+    "modelnet40": {
+        "config": "./data/ModelNet40.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "test"
+    },
+    "ScanObjectNN15": {
+        "config": "./data/ScanObjectNN15.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "test"
+    },
+    "ShapeNetCore54": {
+        "config": "./data/ShapeNetCore54.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "test"
+    },
+    "S3DIS7": {
+        "config": "./data/S3DIS7.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "test"
+    }
+}
