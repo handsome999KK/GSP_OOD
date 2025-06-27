@@ -9,9 +9,22 @@ conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit
 pip install -r requirements.txt
 ```
 
-## Pretrained model
-You need to download the pretrained model from [ULIP2](https://github.com/salesforce/ULIP). In our work, we use the pretrained pointbert as 3D encoder. So you need download the weight as follow:
+## Pre-trained model
+You need to download the pre-trained model from [ULIP2](https://github.com/salesforce/ULIP). In our work, we use the pre-trained pointbert as 3D encoder. So you need download the weight as follow:
 ```bash
 ./Dwonload (the path is decision by you)
  --pretrained_models_ckpt_zero-sho_classification_pointbert_ULIP-2.pt
 ```
+## Running
+Test pre-trained model on ScanObjectNN:
+```bash
+## test on SR1
+python main.py --model ULIP_PointBERT --evaluate_3d --npoints 2048 --test_ckpt_addr path/to/your/pre-trained/model --dataset_name ScanObjectNN15 --dataset_split SR1
+
+## test on SR2
+python main.py --model ULIP_PointBERT --evaluate_3d --npoints 2048 --test_ckpt_addr path/to/your/pre-trained/model --dataset_name ScanObjectNN15 --dataset_split SR2
+
+## test on SR3
+python main.py --model ULIP_PointBERT --evaluate_3d --npoints 2048 --test_ckpt_addr path/to/your/pre-trained/model --dataset_name ScanObjectNN15 --dataset_split SR3
+```
+
