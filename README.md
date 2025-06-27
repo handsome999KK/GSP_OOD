@@ -24,6 +24,18 @@ python main.py --model ULIP_PointBERT --evaluate_3d --npoints 2048 --test_ckpt_a
 ## test on SR2
 python main.py --model ULIP_PointBERT --evaluate_3d --npoints 2048 --test_ckpt_addr path/to/your/pre-trained/model --dataset_name ScanObjectNN15 --dataset_split SR2
 
+## Citation
+
+
+## Acknowledge
+We sincerely appreciate these highly valuable repositories [ULIP2](https://github.com/salesforce/ULIP) and [3DOS](https://github.com/antoalli/3D_OS)
+
+
+
+
+
+
+
 ## test on SR3
 python main.py --model ULIP_PointBERT --evaluate_3d --npoints 2048 --test_ckpt_addr path/to/your/pre-trained/model --dataset_name ScanObjectNN15 --dataset_split SR3
 ```
